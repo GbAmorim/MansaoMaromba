@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+
+}
+
+.header {
+    overflow: hidden;
+}
+
+.bannersabor {
+    width: 100%;
+    height: auto;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-links a:hover {
+    color: rgb(252, 0, 147);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-image: url(/images/banersobre.webp);
+    background-size: cover;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+
+    & h2 {
+        font-size: 3.5rem;
+        margin-bottom: 40px;
+        font-family: "Pirata One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+}
+
+.conteudo-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.conteudo-flex img {
+    max-width: 350px;
+    height: 350px;
+    border-radius: 20%;
+}
+
+.texto-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & h2 {
+        font-size: 3.5rem;
+        font-family: "Pirata One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    & p {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+.secao-produtos {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+    margin: 0 auto;
+
+    & div {
+        max-width: 1200px;
+    }
+
+}
+
+.titulo-central {
+    font-size: 3.5rem;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 1 / 1;
+    background-image: url(/images/fundo.webp);
+    background-size: cover;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.815));
+    border: solid 4px rgb(255, 0, 140);
+}
+
+.overlay-nome {
+    padding: 15px;
+    text-align: center;
+    background: white;
+}
+
+.overlay-nome h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #333;
+    font-weight: 600;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.text-produtos {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* sessao memes */
+
+.memes-section {
+    background-image: url(/images/banner-meme4.webp);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* Ajuste do Vídeo */
+.video-wrapper {
+    width: 700px;
+    height: auto;
+}
+
+.video-wrapper iframe {
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.logo-wrapper img {
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.text-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.text-main h3 {
+    font-size: 3.5rem;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.text-main p {
+    text-align: justify;
+    max-width: 1200px;
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: flex;
+    padding: 20px;
+}
+
+
+/* carmed */
+
+/* Seção Carmed */
+.carmed-section {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.banner-cimed {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.carmed-hero-banner {
+    background-color: #ffc507;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.carmed-title {
+    font-size: 3.5rem;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.carmed-main-image {
+    max-width: 10%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.carmed-content-area {
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+    padding: 0 20px;
+}
+
+.carmed-images-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.carmed-product-image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    /* box-shadow: 0 6px 20px rgb(255, 166, 0); */
+    border: solid 4px rgb(255, 166, 0);
+}
+
+
+.carmed-description {
+    font-size: 2rem;
+    line-height: 1.8;
+    font-weight: bold;
+    text-align: justify;
+
+}
+
+/* footer */
+
+.footer {
+    border-top: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    height: 300px;
+    background: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.images-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-logo .logo {
+    width: 100px;
+    border: none;
+}
+
+.images-logo img {
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.social-links a img {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-links a img:hover {
+    transform: translateY(-5px);
+}
+
+.social-direitos {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-menu a {
+    padding-left: 20px;
+}
+
+.btn-floating {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 140);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn-floating img {
+    width: 25px;
+    filter: invert(1);
+}
+
+.btn-floating:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.btn-floating.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo-mobile,
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 1310px) {
+
+    /* #sobre {
+        flex-direction: column;
+        display: flex;
+    } */
+
+    .media-container {
+        flex-direction: column;
+    }
+
+    .texto-lateral {
+        & h2 {
+            text-align: center;
+        }
+    }
+
+    .memes-section {
+        background-position: center;
+    }
+
+    .grid-produtos {
+        display: grid;
+        /* Define 3 colunas de tamanhos iguais */
+        grid-template-columns: repeat(3, 1fr);
+        /* Define 3 linhas de tamanhos iguais */
+        grid-template-rows: repeat(3, 1fr);
+
+        & .card:nth-child(10) {
+            grid-column: 2;
+        }
+    }
+
+    .banner-cimed {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .carmed-main-image {
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .p-sabor {
+        text-align: center;
+    }
+
+    .conteudo-flex {
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media (max-width: 728px) {
+
+    .header-logo {
+        padding: 20px;
+    }
+
+    .conteudo-flex img {
+        width: 250px;
+        height: auto;
+    }
+
+
+
+    .memes-section {
+        background-position-y: 500px;
+    }
+
+    .texto-lateral {
+        text-align: center;
+    }
+
+    .text-produtos {
+        text-align: center;
+    }
+
+    .text-main {
+        text-align: center;
+    }
+
+    .text-main p {
+        text-align: center;
+    }
+
+    .carmed-description {
+        text-align: center;
+    }
+
+    .video-wrapper {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        & iframe {
+            width: 500px;
+
+        }
+    }
+
+    .carmed-images-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carmed-product-image {
+        max-width: 65%;
+        height: auto;
+    }
+
+    /* 1. Troca das Logos */
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    /* 2. Esconde os links e mostra o hambúrguer */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #000;
+        flex-direction: column;
+        padding: 20px;
+
+        & a {
+            padding: 0;
+        }
+    }
+
+    .nav-menu.active {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-produtos {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 540px) {
+
+    .logo-wrapper img {
+        width: 300px;
+    }
+
+    .carmed-product-image {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .carmed-main-image {
+        max-width: 50%;
+    }
+
+    .memes-section {
+        background-position-y: 400px;
+    }
+
+    .video-wrapper {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        & iframe {
+            width: 320px;
+
+        }
+    }
+
+    .texto-lateral {
+        & p {
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+    }
+
+    .text-main p {
+        font-size: 1.8rem;
+        padding-bottom: 10px;
+    }
+
+    .carmed-description {
+        font-size: 1.8rem;
+    }
+}
